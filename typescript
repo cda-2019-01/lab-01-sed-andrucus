@@ -1,0 +1,105 @@
+Script started on 2019-05-08 00:32:48+0000
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ head data.csv
+12/03/13;A;1;100,0
+05/12/13;A;1;100,0
+25/02/13;B;2;200,0
+04/04/13;N;1;\N
+21/06/13;\N;;
+13/06/14;A;;N
+12/05/14;C;\N;
+05/09/14;\N;3;150,1
+12/05/14;a;2;\N
+28/02/13;c;\N;\N
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ [K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'p'[1Pp'[1P'/'[C data. csv > out.1
+sed: -e expression #1, char 5: unknown option to `s'
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ cat data.csv
+12/03/13;A;1;100,0
+05/12/13;A;1;100,0
+25/02/13;B;2;200,0
+04/04/13;N;1;\N
+21/06/13;\N;;
+13/06/14;A;;N
+12/05/14;C;\N;
+05/09/14;\N;3;150,1
+12/05/14;a;2;\N
+28/02/13;c;\N;\N
+02/08/13;A;2;100;0
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ cat <[K<[K> out.1 >[K<<EOF
+> ^V[K12/03/13;A;1;100,0
+> 05/12/13;A;1;100,0
+> 25/02/13;B;2;200,0
+> 04/04/13;N;1;\N
+> 21/06/13;\N;;
+> 13/06/14;A;;N
+> 12/05/14;C;\N;
+> 05/09/14;\N;3;150,1
+> 12/05/14;a;2;\N
+> 28/02/13;c;\N;\N
+> EOF
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ o[Kcat out.1
+12/03/13;A;1;100,0
+05/12/13;A;1;100,0
+25/02/13;B;2;200,0
+04/04/13;N;1;\N
+21/06/13;\N;;
+13/06/14;A;;N
+12/05/14;C;\N;
+05/09/14;\N;3;150,1
+12/05/14;a;2;\N
+28/02/13;c;\N;\N
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/' out.1 [A
+sed: -e expression #1, char 5: unknown option to `s'
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/'[K]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's///-/' out.1
+sed: -e expression #1, char 5: unknown option to `s'
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's/*/-/' out.1
+12/03/13;A;1;100,0
+05/12/13;A;1;100,0
+25/02/13;B;2;200,0
+04/04/13;N;1;\N
+21/06/13;\N;;
+13/06/14;A;;N
+12/05/14;C;\N;
+05/09/14;\N;3;150,1
+12/05/14;a;2;\N
+28/02/13;c;\N;\N
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ ct[Kat out.1
+12/03/13;A;1;100,0
+05/12/13;A;1;100,0
+25/02/13;B;2;200,0
+04/04/13;N;1;\N
+21/06/13;\N;;
+13/06/14;A;;N
+12/05/14;C;\N;
+05/09/14;\N;3;150,1
+12/05/14;a;2;\N
+28/02/13;c;\N;\N
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed '/1/[K[K"7[K[K[K[K[K[K[K[Kc[Kout.1 [K[K[K[K[K[Kdata.csv >out.1
+data.csv: command not found
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ cat data.cvs[K[Ksv
+12/03/13;A;1;100,0
+05/12/13;A;1;100,0
+25/02/13;B;2;200,0
+04/04/13;N;1;\N
+21/06/13;\N;;
+13/06/14;A;;N
+12/05/14;C;\N;
+05/09/14;\N;3;150,1
+12/05/14;a;2;\N
+28/02/13;c;\N;\N
+02/08/13;A;2;100;0
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ d[Ksed 's/8/*/' data.csv >out.1
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ cat out.1
+12/03/13;A;1;100,0
+05/12/13;A;1;100,0
+25/02/13;B;2;200,0
+04/04/13;N;1;\N
+21/06/13;\N;;
+13/06/14;A;;N
+12/05/14;C;\N;
+05/09/14;\N;3;150,1
+12/05/14;a;2;\N
+2*/02/13;c;\N;\N
+02/0*/13;A;2;100;0
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/lab-01-sed-andrucus[00m$ sed 's/*/[K[K7[K//-/' data.csv >oyt.[K[K[Kut.2
+sed: -e expression #1, char 5: unknown option to `s'
+]0;vagrant@ubuntu-bionic: /vagrant/laboratorios/lab-01-sed-andrucus[01;32mvagrant@ubuntu-bionic[00m:[01;34m/vagrant/laboratorios/
